@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫學測量及儀表-期末報告總整理</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0;
+            background-color: rgba(186, 206, 236, 0.164);
+            font-family: "微軟正黑體";
+        }
+
+        .menu {
+            position: absolute;
+            top: 30px;
+            left: 7px;
+            background-color: rgb(170, 190, 228);
+            width: 375px;
+            height: 710px;
+            border-radius: 10px;
+        }
+
+        .t1 {
+            position: absolute;
+            left: 38%;
+            top: 1px;
+            font-size: 34px;
+        }
+
+        .t2 {
+            position: absolute;
+            left: 28%;
+            top: 110px;
+            font-size: 24px;
+        }
+
+        .has_children {
+            cursor: pointer;
+            width: 300px;
+            font-size: 24px;
+        }
+
+        .highlight {
+            backgroung: #F60;
+        }
+
+        div a {
+            display: none;
+            width: 370px;
+            float: left;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".has_children").click(function () {
+                $(this).addClass("highlight")
+                    .children("a").show().end()
+
+                    .siblings().removeClass("highlight")
+                    .children("a").hide();
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <p class="t1" align="center">醫學測量及儀表 &ensp; 期末報告總整理<br>
+        題目:.....</p>
+    <p class="t2" align="center">系級:醫工三甲 組別:2021S A9<br>
+        指導老師: 蔡政倫 老師<br>
+        組長: 陳依廷/10844105<br>
+        組員: 陳瑜婷/10625139&ensp;洪子婷/10625156&ensp;杜品靜/10625256&ensp;蘇子鑒/10725150</p>
+    <div class="menu">
+    <div class="has_children">
+        <ul>
+        <li>首頁</li>
+        </ul>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---背景</a>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---動機</a>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---目的</a>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---參考資料</a>
+    </div>
+    <div class="has_children">
+        <ul>
+            <li>設計專案</li>
+        </ul>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---心智地圖</a>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---強弱危機分析</a>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---魚骨圖</a>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---甘特圖</a>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---市場分析</a>
+    </div>
+    <div class="has_children">
+        <ul>
+        <li>設計資料</li>
+        </ul>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---儀器功用與偵測原理</a>
+          <a href="#" style="text-decoration: none;">&emsp;&emsp;---儀器功能方塊圖</a>
+        <a href="#" style="text-decoration: none;">&emsp;&emsp;---儀器外觀</a>
+        <a href="#" style="text-decoration: none;">&emsp;&emsp;---電子線路圖</a>
+        <a href="#" style="text-decoration: none;">&emsp;&emsp;---機構圖</a>
+    </div>
+    <div class="has_children">
+        <ul>
+        <li>會議記錄</li>
+        </ul>
+            <a href="link/m1.html" style="text-decoration: none;">&emsp;&emsp;---第一次</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---第二次</a>
+            <a href="link/m3.html" style="text-decoration: none;">&emsp;&emsp;---第三次</a>
+            <a href="link/m4.html" style="text-decoration: none;">&emsp;&emsp;---第四次</a>
+            <a href="link/m5.html" style="text-decoration: none;">&emsp;&emsp;---第五次</a>
+            <a href="link/m6.html" style="text-decoration: none;">&emsp;&emsp;---第六次</a>
+    </div>
+        <ul>
+        <li style="font-size: 24px;">App介面分析報告</li>
+        </ul>
+    <div class="has_children">
+        <ul>
+        <li>尿液試紙報告</li>
+        </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---分子結構</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---化學反應式</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---生理意義與正常值範圍</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---臨床病理意義及異常原因</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---異常時之醫療處置方</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---試紙檢驗量化各顏色定義</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---其他檢測方法與比較</a>
+    </div>
+    <div class="has_children">
+        <ul>
+        <li>光譜儀設計技術手冊</li>
+        </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---性能描述</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---運作功能方塊圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---外觀與內部機械架構圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---電子線路圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---雙層電路板正反面佈線圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---電路板3D模擬圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---機構圖與電路板爆炸組裝圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---零件表</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---光譜儀實體製作</a>
+    </div>
+    </div>
+</body>
+
+</html>

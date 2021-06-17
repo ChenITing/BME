@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫學測量及儀表-期末報告總整理</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0;
+            background-color: rgba(186, 206, 236, 0.164);
+            font-family: "微軟正黑體";
+        }
+
+        .menu {
+            position: absolute;
+            top: 30px;
+            left: 7px;
+            background-color: rgb(170, 190, 228);
+            width: 375px;
+            height: 710px;
+            border-radius: 10px;
+        }
+
+        .t1 {
+            position: absolute;
+            left: 35%;
+            top: 1px;
+            font-size: 34px;
+        }
+
+        .t2 {
+            position: absolute;
+            left: 27%;
+            top: 110px;
+            width: 1200px;
+            font-size: 24px;
+            padding: 30px;
+        }
+
+        .has_children {
+            cursor: pointer;
+            width: 300px;
+            font-size: 24px;
+        }
+
+        .highlight {
+            backgroung: #F60;
+        }
+
+        div a {
+            display: none;
+            width: 370px;
+            float: left;
+        }
+
+        div content {
+            width: 370px;
+            float: left;
+        }
+
+        img {
+            width: 300px;
+            height: 600px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".has_children").click(function () {
+                $(this).addClass("highlight")
+                    .children("a").show().end()
+
+                    .siblings().removeClass("highlight")
+                    .children("a").hide();
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <p class="t1">醫學測量及儀表(109-2)第A9組 學期報告第 一 次討論會議紀錄</p>
+        <p class="t2">
+            時間：2021年3月4日13:00~15:00 &emsp;地點：工學311
+            &emsp;主席：陳瑜婷 &emsp;記錄審訂：陳依廷<br>
+            出席：10625139陳瑜婷、10625156 洪子婷 10625256 杜品靜、10844105陳依廷<br>
+            主題：藍芽傳輸耳溫槍<br>
+            Ⅰ.進度報告：
+            設定報告目標產品、App範本決定<br>
+            Ⅱ.討論事項：<br>
+            1.選定欲參考APP範本<br>
+            2.選定欲設計之儀器<br>
+            Ⅲ.討論內容：<br>
+            依廷:大家一起來討論要做甚麼吧!<br>
+            子婷:好啊~<br>
+
+            依廷:那大家有甚麼想法嗎?<br>
+
+            瑜婷:我們只要先決定適合的APP範本，還有我們要呈現哪些跟防疫有關的資訊，像是體溫、症狀等<br>
+
+            依廷:好的，了解<br>
+
+            品靜:那我們要開始找APP嗎?<br>
+
+            瑜婷:對，可以直接結程式下面的圖，把那些當作範本<br>
+
+            依廷:大家有找到甚麼適合的APP嗎?不如大家先各自找覺得適合的APP放上來，有空的人可以回覆一下自己的看法，我邊打成會議記錄<br>
+
+            依廷:這是我找到的，「血壓記錄」大約分7個介面包含日曆記錄、查看血壓、圖表統計、走勢、分析數據、分享記錄、記錄血壓<br>
+            <img src="../img/1.jpg">
+            <img src="../img/2.jpg"><br>
+            品靜:我找的是血糖的，可以查看趨勢、進度、記錄、回顧、比較數據還有親友連動等等<br>
+            <img src="../img/3.jpg">
+            <img src="../img/4.jpg"><br>
+            瑜婷:這個程式不算多重介面，但我認為足跡記錄這個可以加入APP<br>
+            <img src="../img/5.jpg"><br>
+            子婷:這個是可以測量心率的是否正常，也能在不同狀態下測量<br>
+            <img src="../img/6.jpg"><br>
+            依廷:我們有確定好要做甚麼儀器嗎，或許能利用儀器選出一個最適合的APP<br>
+            子婷:老師好像有說要跟疫情相關的<br>
+            瑜婷:有!<br>
+            品靜:那要跟之前一樣嗎?<br>
+            依廷:可能要進行微調<br>
+            品靜:那可能要先看看之前的再討論要怎麼調整<br>
+            子婷:這樣是要找有關體溫記錄的APP嗎?<br>
+            依廷:應該是<br>
+            品靜:是像這種的嗎?<br>
+            <img src="../img/7.jpg"><br>
+            子婷:這種應該可以!<br>
+            依廷:那我們以品靜最後傳的這個APP為範本OK嗎?<br>
+            品靜:我覺得OK<br>
+            子婷:ok<br>
+            瑜婷:我也OK<br>
+
+            Ⅳ.決議事項：<br>
+            1. 決議APP參考範本為群組健康管理-團體體溫記錄<br>
+            2. 決議設計藍芽耳溫槍<br>
+        </p>
+    </div>
+    <div class="menu">
+        <div class="has_children">
+            <ul>
+                <li>首頁</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---背景</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---動機</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---目的</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---參考資料</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>設計專案</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---心智地圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---強弱危機分析</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---魚骨圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---甘特圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---市場分析</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>設計資料</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---儀器功用與偵測原理</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---儀器功能方塊圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---儀器外觀</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---電子線路圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---機構圖</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>會議記錄</li>
+            </ul>
+            <a href="m1.html" style="text-decoration: none;">&emsp;&emsp;---第一次</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---第二次</a>
+            <a href="m3.html" style="text-decoration: none;">&emsp;&emsp;---第三次</a>
+            <a href="m4.html" style="text-decoration: none;">&emsp;&emsp;---第四次</a>
+            <a href="m5.html" style="text-decoration: none;">&emsp;&emsp;---第五次</a>
+            <a href="../link/m6.html" style="text-decoration: none;">&emsp;&emsp;---第六次</a>
+        </div>
+        <ul>
+            <li style="font-size: 24px;">App介面分析報告</li>
+        </ul>
+        <div class="has_children">
+            <ul>
+                <li>尿液試紙報告</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---分子結構</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---化學反應式</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---生理意義與正常值範圍</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---臨床病理意義及異常原因</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---異常時之醫療處置方</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---試紙檢驗量化各顏色定義</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---其他檢測方法與比較</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>光譜儀設計技術手冊</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---性能描述</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---運作功能方塊圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---外觀與內部機械架構圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---電子線路圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---雙層電路板正反面佈線圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---電路板3D模擬圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---機構圖與電路板爆炸組裝圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---零件表</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---光譜儀實體製作</a>
+        </div>
+    </div>
+</body>
+
+</html>
