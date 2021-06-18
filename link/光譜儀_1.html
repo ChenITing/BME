@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫學測量及儀表-期末報告總整理</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0;
+            background-color: rgba(186, 206, 236, 0.164);
+            font-family: "微軟正黑體";
+        }
+
+        .menu {
+            position: absolute;
+            top: 30px;
+            left: 7px;
+            background-color: rgb(170, 190, 228);
+            width: 375px;
+            height: 710px;
+            border-radius: 10px;
+        }
+
+        .t1 {
+            position: absolute;
+            left: 35%;
+            top: 1px;
+            font-size: 34px;
+        }
+
+        .t2 {
+            position: absolute;
+            left: 27%;
+            top: 110px;
+            width: 1000px;
+            font-size: 24px;
+            padding: 30px;
+        }
+
+        .t3 {
+            position: absolute;
+            left: 28%;
+            top: 90px;
+            font-size: 34px;
+        }
+
+        .has_children {
+            cursor: pointer;
+            width: 300px;
+            font-size: 24px;
+        }
+
+        .highlight {
+            backgroung: #F60;
+        }
+
+
+        div a {
+            display: none;
+            width: 370px;
+            float: left;
+        }
+
+        div content {
+            width: 370px;
+            float: left;
+        }
+
+        img {
+            width: 300px;
+            height: 600px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".has_children").click(function () {
+                $(this).addClass("highlight")
+                    .children("a").show().end()
+
+                    .siblings().removeClass("highlight")
+                    .children("a").hide();
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <p class="t1">醫學測量及儀表(109-2)第A9組 光譜儀設計技術手冊</p>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top: 90px;" id="aa">一. 前言</ul><br>
+        <li style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 180px;">
+            原子吸收光譜法是利用基態原子對特定波長光譜線吸收的光譜分析法，主
+            要用於微量金屬元素的定量，原子吸收光譜儀用於金屬原子吸光測定，光源一
+            般是空心陰極燈，空心陰極燈是一種冷陰極燈，在物理和化學中用作光譜線源
+            的頻率調節器，所配備的原子化器主要有火焰原子化器或石墨爐。</li>
+        <br><br>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top: 290px;" id="bb">二. 背景與目的</ul>
+        <li style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 380px;">
+            近年來光電檢測與控制、光學元件製造、微光機電、生物醫學科技進步，
+            以及原子物理、化學的研究發展，對於光譜儀之研究應用方面需求，一直不斷
+            的在更新，目前主要應用的光譜分析技術有光譜吸光度測量、光譜反射率測
+            量、近紅外光譜儀測量、螢光光譜測量、拉曼光譜測量與原子發射光譜測量，
+            由於光學、光源件在紅外光、紫外光等等，在不同範圍的情況下具有不同的特
+            性，光譜儀是應用光學原理，對物質的結構和成分進行觀測、分析和處理的基
+            本設備，具有分析精度高、測量範圍大、速度快和樣品用量少等優點。</li><br><br>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top: 550px;" id="cc">三. 原理</ul><br>
+        <li style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 640px;">
+            可見光是電磁波譜中人類眼睛可以看得見、感受得到的部分，波長的範圍
+            一般是落在 380nm 到 780nm 之間，人眼對於不同波長的電磁波會有不同顏色
+            的視覺神經感覺。光譜儀的主要的功用是將各種波長組合而成的光分解為光譜
+            線的科學儀器，主 要是由稜鏡或繞射光柵等構成，當光通過分光元件(如光
+            柵、棱鏡)進行分光後， 即會依照波長的大小順次排列，配合著偵測器，即可
+            測量物體表面對於各種波長光 線的反射情形，或是光線穿透物體時，對於各種
+            波長光線的吸收情形。光譜儀可對物質的結構和成分進行觀測、分析和處理，
+            具有分析精度高、測量範圍大、速度快等優點。
+            光譜儀主要的功用是將複雜的光分解為光譜線的科學儀器，利用繞射光柵
+            配合光繞射的原理來產生光譜，繞射光柵的功能是使光源能夠依照不同的波長
+            分離出來，也可以視為一個三菱鏡，入射光是由多種波長混合而成，經過三菱
+            鏡後便會因不同波長對折射率的行進速度不同，而分離成不同方向的行進光。
+            當複色光通過分光元件進行分光後，依照光的波長或頻率大小排列形成的圖
+            案。光譜中最大的一部分可見光譜是電磁波譜中人眼可見的一部分， 在這個波
+            長範圍內的電磁輻射被稱作可見光。利用光譜儀可測量物體表面反射的光線、
+            穿透物體的穿透光和物體的吸收光。
+            利用光碟片來取代光譜儀中的繞射光柵。光碟片內部有許多等距、平行的
+            鋸齒狀凹槽，當光碟片在日光下會見到多種顏色，就是因為繞射效應將光波分
+            離的結果。</li>
+
+        <ul style="font-size: 34px; position: absolute; left: 26%; top: 1090px;" id="dd">四.參考資料</ul><br>
+    </div>
+    <a href="http://physics.thu.edu.tw/sites/default/files/05-5101.pdf" style="position: absolute; left: 28.6%; font-size: 24px; top: 1180px;">http://physics.thu.edu.tw/sites/default/files/05-5101.pdf</a>
+    <a href="http://www2.nsysu.edu.tw/physdemo/2012/C3/95演⽰看板.pdf"style="position: absolute; left: 28.6%; font-size: 24px; top: 1210px;">http://www2.nsysu.edu.tw/physdemo/2012/C3/95演⽰看板.pdf</a>
+    <a href="https://aoiea.itri.org.tw/TC/includes/GetFile.ashx?mid=38&id=502&chk=aad7106c-4f60-468d-ab7e-68f8a7ac292a&name=FileName" style="position: absolute; left: 28.6%; font-size: 24px; top: 1240px;">https://aoiea.itri.org.tw/TC/includes/GetFile.ashx?mid=38&id=502&chk=aad7106c-4f6<br>0-468d-ab7e-68f8a7ac292a&name=FileName</a>
+    <a href="https://how2electronics.com/interfacing-triad-spectroscopy-sensor-as7265x-witharduino/" style="position: absolute; left: 28.6%; font-size: 24px; top: 1300px;">https://how2electronics.com/interfacing-triad-spectroscopy-sensor-as7265x-witharduino/</a>
+    <a href="http://www2.nsysu.edu.tw/physdemo-high/Physic_Website_Job/physic_web/16-Quantum/heading_pdf/science.pdf" style="position: absolute; left: 28.6%; font-size: 24px; top: 1330px;">http://www2.nsysu.edu.tw/physdemo-high/Physic_Website_Job/physic_web/16-Quantum/<br>heading_pdf/science.pdf</a>
+    <a href="https://www.mxeduc.org.tw/scienceaward/history/projectDoc/15th/doc/SA15-298_final.pdf" style="position: absolute; left: 28.6%; font-size: 24px; top: 1390px;">https://www.mxeduc.org.tw/scienceaward/history/projectDoc/15th/doc/SA15-298_final.pdf</a>
+    <br>
+
+
+    
+    <div class="menu">
+        <div class="has_children">
+            <ul>
+                <li>首頁</li>
+            </ul>
+            <a href="#aa" style="text-decoration: none;">&emsp;&emsp;---前言</a>
+            <a href="#bb" style="text-decoration: none;">&emsp;&emsp;---背景與目的</a>
+            <a href="#cc" style="text-decoration: none;">&emsp;&emsp;---原理</a>
+            <a href="#dd" style="text-decoration: none;">&emsp;&emsp;---參考資料</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>設計專案</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---心智地圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---強弱危機分析</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---魚骨圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---甘特圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---市場分析</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>設計資料</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---性能描述</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---運作功能方塊圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---外觀與內部機械架構圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---電子線路圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---雙層電路板正反面佈線圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---電路板3D模擬圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---機構圖與電路板爆炸組裝圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---零件表</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---光譜儀實體製作</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>會議記錄</li>
+            </ul>
+            <a href="m1.html" style="text-decoration: none;">&emsp;&emsp;---第一次(2021.03.04)</a>
+            <a href="m2.html" style="text-decoration: none;">&emsp;&emsp;---第二次(2021.03.29)</a>
+            <a href="m3.html" style="text-decoration: none;">&emsp;&emsp;---第三次(2021.04.11)</a>
+            <a href="m4.html" style="text-decoration: none;">&emsp;&emsp;---第四次(2021.04.21)</a>
+            <a href="m5.html" style="text-decoration: none;">&emsp;&emsp;---第五次(2021.05.12)</a>
+            <a href="m6.html" style="text-decoration: none;">&emsp;&emsp;---第六次(2021.05.26)</a>
+        </div>
+        <div class="has_children">
+        <ul>
+            <li style="font-size: 24px;">App介面分析報告</li>
+        </ul>
+            <a href="../link/app.html"style="text-decoration: none;">&emsp;&emsp;---App介面分析</a>
+        
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>尿液試紙報告</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---分子結構</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---化學反應式</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---生理意義與正常值範圍</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---臨床病理意義及異常原因</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---異常時之醫療處置方</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---試紙檢驗量化各顏色定義</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---其他檢測方法與比較</a>
+        </div>
+    </div>
+</body>
+
+</html>
