@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫學測量及儀表-期末報告總整理</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0;
+            background-color: rgba(186, 206, 236, 0.164);
+            font-family: "微軟正黑體";
+        }
+
+        .menu {
+            position: absolute;
+            top: 30px;
+            left: 7px;
+            background-color: rgb(170, 190, 228);
+            width: 375px;
+            height: 710px;
+            border-radius: 10px;
+        }
+
+        .t1 {
+            position: absolute;
+            left: 38%;
+            top: 1px;
+            font-size: 34px;
+        }
+
+        .t2 {
+            position: absolute;
+            left: 29%;
+            top: 110px;
+            font-size: 24px;
+        }
+
+        .has_children {
+            cursor: pointer;
+            width: 300px;
+            font-size: 24px;
+        }
+
+        .highlight {
+            backgroung: #F60;
+        }
+
+        div a {
+            display: none;
+            width: 370px;
+            float: left;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".has_children").click(function () {
+                $(this).addClass("highlight")
+                    .children("a").show().end()
+
+                    .siblings().removeClass("highlight")
+                    .children("a").hide();
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <p class="t1" align="center" id="00">醫學測量及儀表 &ensp; 期末報告總整理<br>
+        光譜儀設計資料</p>
+    <p class="t2" align="center">系級:醫工三甲 組別:2021S A9<br>
+        指導老師: 蔡正倫 老師<br>
+        組長: 陳依廷/10844105<br>
+        組員: 陳瑜婷/10625139&ensp;洪子婷/10625156&ensp;杜品靜/10625256&ensp;蘇子鑒/10725150</p><br>
+    <div class="content">
+        <ul style="font-size: 34px; position: absolute; left: 26%; top: 240px;" id="aa">一. 原理</ul><br>
+        <li style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 340px;">
+            &emsp;&emsp;可見光是電磁波譜中人類眼睛可以看得見、感受得到的部分，波長的範圍
+            一般是落在 380nm 到 780nm 之間，人眼對於不同波長的電磁波會有不同顏色
+            的視覺神經感覺。光譜儀的主要的功用是將各種波長組合而成的光分解為光譜
+            線的科學儀器，主 要是由稜鏡或繞射光柵等構成，當光通過分光元件(如光
+            柵、棱鏡)進行分光後， 即會依照波長的大小順次排列，配合著偵測器，即可
+            測量物體表面對於各種波長光 線的反射情形，或是光線穿透物體時，對於各種
+            波長光線的吸收情形。光譜儀可對物質的結構和成分進行觀測、分析和處理，
+            具有分析精度高、測量範圍大、速度快等優點。<br>
+            &emsp;&emsp;光譜儀主要的功用是將複雜的光分解為光譜線的科學儀器，利用繞射光柵
+            配合光繞射的原理來產生光譜，繞射光柵的功能是使光源能夠依照不同的波長
+            分離出來，也可以視為一個三菱鏡，入射光是由多種波長混合而成，經過三菱
+            鏡後便會因不同波長對折射率的行進速度不同，而分離成不同方向的行進光。
+            當複色光通過分光元件進行分光後，依照光的波長或頻率大小排列形成的圖
+            案。光譜中最大的一部分可見光譜是電磁波譜中人眼可見的一部分， 在這個波
+            長範圍內的電磁輻射被稱作可見光。利用光譜儀可測量物體表面反射的光線、
+            穿透物體的穿透光和物體的吸收光。<br>
+            &emsp;&emsp;利用光碟片來取代光譜儀中的繞射光柵。光碟片內部有許多等距、平行的
+            鋸齒狀凹槽，當光碟片在日光下會見到多種顏色，就是因為繞射效應將光波分
+            離的結果
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top: 830px;" id="bb">二.性能描述及實驗方法</ul><br>
+        <li style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 940px;">
+            &emsp;&emsp;光譜學應用在光譜儀能夠研究物質和電磁輻射之間的相互作用作為輻射波
+            長或頻率。簡單來說，光譜學是對顏色的精確研究，從可見光到電磁光譜的所
+            有波段。通過對物體的光進行這種解剖和分析，研究人員可以推斷出該物體的
+            物理特性，例如溫度、質量、光度和成分。<br>
+            &emsp;&emsp;分光技術的基本原理是將束照到的電磁輻射到所述材料的樣品，並觀察它
+            如何響應於這樣的刺激。響應通常被記錄為輻射波長的函數。作為波長函數的
+            響應圖稱為光譜。<br>
+            &emsp;&emsp;每種類型的分子和原子都會以其特有的方式反射、吸收或發射電磁輻射。
+            光譜學使用這些特徵來推斷和分析樣品的成分。<br>
+            &emsp;&emsp;光譜儀依分光元件的不同分為稜鏡光譜儀、光柵光譜儀和干涉光譜儀，其
+            中以光柵光譜儀最為常見。光柵可分為透射與反射兩種，透射光柵是在光學平
+            玻璃上刻劃出一道道等間距的刻痕，刻痕處不透光，未刻處則是透光的狹縫；
+            反射光柵則是在金屬反射鏡上刻劃一道道刻痕，刻痕處不反光，未刻處則可以
+            反光。當光線照射到光柵時會產生繞射現象，由於不同波長的光線會有不同的
+            繞射角而達到分光的效果。不同波長 λ 的光線照射到光柵後其入射角 θ 及繞
+            射角 α 的關係遵循著下列的光柵方程式：<br>
+            &emsp;&emsp;&emsp;&emsp;d(sinθ+sinα)=mλ ⇒ α=sin−1(mλ/d−sinθ)<br>
+            其中 d 為光柵的狹縫間距，m=0, ±1, ±2,... 為繞射的級數，由此方程式可以看
+            出，當光柵的狹縫間距為定值時，不同波長的光線會有不同的繞射角，藉以達
+            到分光的效果。<br>
+            以下面右圖為例，波長 550nm 的綠光以θ = 14。的入射角，穿透每 mm 有 1000 條
+            線(狹縫間距為 1000nm)的透射光柵後，所產生的第 1 級繞射角為<br>
+            α =sin−1(1×550/1000−sin14。)=17.9。<br>
+            <img src="../img/21.png" width="450px">&emsp;<img src="../img/20.png" width="450px">
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:1860px;" id="cc">三.運作功能方塊圖</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 1980px;">
+
+            <img src="../img/方塊.png" style="width: 1160px; height: 120px;">
+            <br><br>
+            &emsp;
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:2100px;" id="dd">四.外觀與內部機械架構圖</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 30.6%; top: 2130px;">
+            <img src="../img/外觀.png" style="width: 900px;"><br>
+            <p align="center">外部架構▲</p><br>
+            <img src="../img/內部.png" style="width: 700px;"><br>
+            <p align="center">內部機械架構▲</p>
+            <br><br>
+            &emsp;
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:3410px;" id="ee">五.電子線路圖</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 3530px;">
+            <img src="../img/線路.jpg" width="1100px" height="700px">
+            <br><br>
+            &emsp;
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:4210px;" id="ff">六.雙層電路板正反面佈線圖</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 4350px;">
+            <img src="../img/電路板.jpg" style="width: 700px;"><br>
+
+        </li>
+
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:5090px;" id="gg">七.電路板3D模擬圖</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 5210px;">
+            <img src="../img/3d_1.jpg" width="450px">&emsp;
+            <img src="../img/3d_2.jpg" width="450px">
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:5670px;" id="hh">八.機構圖與電路板爆炸圖</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 5810px;">
+            <img src="../img/機構.png" width="800px" align="center"><br>
+            <p align="center">機構爆炸組裝圖▲</p><br>
+            <img src="../img/爆炸圖.png" width="700px" height="700px" align="center"><br>
+            <p align="center">電路板爆炸組裝圖▲</p>
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:7180px;" id="ii">九.零件表</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 7310px;">
+            <img src="../img/零件.jpg" width="1200px" height="580px" align="center"><br>
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:7890px;" id="jj">十.光譜儀實體製作</ul><br>
+        <li style="width: 1000px; list-style-type: none; font-size: 24px; ">
+            <p style="position: absolute; left: 28.6%; top: 8010px;">1.光譜儀成品</p>
+            <img src="../img/13.jpg" width="600px" height="850px"
+                style="position: absolute; left: 28.6%; top: 8110px;"><br>
+            <img src="../img/15.png" width="600px" style="position: absolute; left: 56.6%; top: 8510px;"><br>
+            <img src="../img/14.png" width="600px" style="position: absolute; left: 56.6%; top: 8110px;"><br>
+            <p style="position: absolute; left: 28.6%; top: 8990px;">2.光譜儀內部</p>
+            <img src="../img/16.png" width="600px" style="position: absolute; left: 28.6%; top: 9090px;">
+            <p style="position: absolute; left: 28.6%; top: 9560px; width: 900px;">3.實際測量<br>
+                &emsp;(1)太陽光<br> &emsp; &emsp;將光譜儀對向太陽可以看到左右對稱的光譜，並由下圖可見為連續光譜，散射後<br>
+                &emsp; &emsp;有紅、橙、黃、綠、青、藍、紫色，波長約在450nm~700nm左右。<br>
+                <img src="../img/17.png" width="1000px">
+                &emsp;(2)日光燈<br> &emsp; &emsp;將光譜儀改對日光燈可見左右對稱的光譜，並由下圖可見為不連續光譜，散射後<br>
+                &emsp; &emsp;可見紅、橙、綠、青、藍5色獨立不連續光譜，波長約在450nm~680nm左右。<br>
+                <img src="../img/18.png" width="1000px">
+                &emsp;(3)一般白光LED燈泡<br> &emsp; &emsp;將光譜儀對向一般白光LED燈泡可以看到左右對稱的光譜，並由下圖三可見為連<br>&emsp; &emsp;續
+                光譜，散射後紅、黃、綠、紫色較為明顯，波長約在450nm~670nm左右。<br>
+                <img src="../img/19.png" width="1000px"><br>&emsp;
+            </p>
+
+        </li>
+
+
+    </div>
+    <div class="menu">
+        <div class="has_children">
+            <ul>
+                <li>首頁</li>
+            </ul>
+            <a href="../link/光譜儀_1.html#aa" style="text-decoration: none;">&emsp;&emsp;---前言</a>
+            <a href="../link/光譜儀_1.html#bb" style="text-decoration: none;">&emsp;&emsp;---動機</a>
+            <a href="../link/光譜儀_1.html#cc" style="text-decoration: none;">&emsp;&emsp;---背景與目的</a>
+            <a href="../link/光譜儀_1.html#dd" style="text-decoration: none;">&emsp;&emsp;---參考資料</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>設計專案</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---心智地圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---強弱危機分析</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---魚骨圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---甘特圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---市場分析</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>設計資料</li>
+            </ul>
+            <a href="#aa" style="text-decoration: none;">&emsp;&emsp;---原理</a>
+            <a href="#bb" style="text-decoration: none;">&emsp;&emsp;---性能描述</a>
+            <a href="#cc" style="text-decoration: none;">&emsp;&emsp;---運作功能方塊圖</a>
+            <a href="#dd" style="text-decoration: none;">&emsp;&emsp;---外觀與內部機械架構圖</a>
+            <a href="#ee" style="text-decoration: none;">&emsp;&emsp;---電子線路圖</a>
+            <a href="#ff" style="text-decoration: none;">&emsp;&emsp;---雙層電路板正反面佈線圖</a>
+            <a href="#gg" style="text-decoration: none;">&emsp;&emsp;---電路板3D模擬圖</a>
+            <a href="#hh" style="text-decoration: none;">&emsp;&emsp;---機構圖與電路板爆炸組裝圖</a>
+            <a href="#ii" style="text-decoration: none;">&emsp;&emsp;---零件表</a>
+            <a href="#jj" style="text-decoration: none;">&emsp;&emsp;---光譜儀實體製作</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>會議記錄</li>
+            </ul>
+            <a href="../link/m1.html" style="text-decoration: none;">&emsp;&emsp;---第一次(2021.03.04)</a>
+            <a href="../link/m2.html" style="text-decoration: none;">&emsp;&emsp;---第二次(2021.03.29)</a>
+            <a href="../link/m3.html" style="text-decoration: none;">&emsp;&emsp;---第三次(2021.04.11)</a>
+            <a href="../link/m4.html" style="text-decoration: none;">&emsp;&emsp;---第四次(2021.04.21)</a>
+            <a href="../link/m5.html" style="text-decoration: none;">&emsp;&emsp;---第五次(2021.05.12)</a>
+            <a href="../link/m6.html" style="text-decoration: none;">&emsp;&emsp;---第六次(2021.05.26)</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li style="font-size: 24px;">App介面分析報告</li>
+            </ul>
+            <a href="../link/app.html" style="text-decoration: none;">&emsp;&emsp;---App介面分析</a>
+
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>尿液試紙報告</li>
+            </ul>
+            <a href="../link/尿液分析.html#00" style="text-decoration: none;">&emsp;&emsp;---分子結構</a>
+            <a href="../link/尿液分析.html#bb" style="text-decoration: none;">&emsp;&emsp;---化學反應式</a>
+            <a href="../link/尿液分析.html#cc" style="text-decoration: none;">&emsp;&emsp;---生理意義與正常值範圍</a>
+            <a href="../link/尿液分析.html#dd" style="text-decoration: none;">&emsp;&emsp;---臨床病理意義及異常原因</a>
+            <a href="../link/尿液分析.html#ee" style="text-decoration: none;">&emsp;&emsp;---異常時之醫療處置方</a>
+            <a href="../link/尿液分析.html#ff" style="text-decoration: none;">&emsp;&emsp;---試紙檢驗量化各顏色定義</a>
+            <a href="../link/尿液分析.html#gg" style="text-decoration: none;">&emsp;&emsp;---其他檢測方法與比較</a>
+        </div>
+    </div>
+</body>
+
+</html>
