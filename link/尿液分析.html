@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫學測量及儀表-期末報告總整理</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0;
+            background-color: rgba(186, 206, 236, 0.164);
+            font-family: "微軟正黑體";
+        }
+
+        .menu {
+            position: absolute;
+            top: 30px;
+            left: 7px;
+            background-color: rgb(170, 190, 228);
+            width: 375px;
+            height: 710px;
+            border-radius: 10px;
+        }
+
+        .t1 {
+            position: absolute;
+            left: 38%;
+            top: 1px;
+            font-size: 34px;
+        }
+
+        .t2 {
+            position: absolute;
+            left: 29%;
+            top: 110px;
+            font-size: 24px;
+        }
+
+        .has_children {
+            cursor: pointer;
+            width: 300px;
+            font-size: 24px;
+        }
+
+        .highlight {
+            backgroung: #F60;
+        }
+
+        div a {
+            display: none;
+            width: 370px;
+            float: left;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".has_children").click(function () {
+                $(this).addClass("highlight")
+                    .children("a").show().end()
+
+                    .siblings().removeClass("highlight")
+                    .children("a").hide();
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <p class="t1" align="center" id="00">醫學測量及儀表 &ensp; 期末報告總整理<br>
+        尿液試紙分析報告</p>
+    <p class="t2" align="center">系級:醫工三甲 組別:2021S A9<br>
+        指導老師: 蔡正倫 老師<br>
+        組長: 陳依廷/10844105<br>
+        組員: 陳瑜婷/10625139&ensp;洪子婷/10625156&ensp;杜品靜/10625256&ensp;蘇子鑒/10725150</p><br>
+    <div class="content">
+        <ul style="font-size: 34px; position: absolute; left: 26%; top: 240px;" id="aa">一. 分子結構</ul><br>
+        <li style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 340px;">
+            丙酮、乙醯乙酸、β-羥丁酸為酮體三兄弟，脂肪酸的中間產物就是這三項。<br>
+            <br>各酮體所佔的比例:<br>
+            β-羥丁酸所占比例最高約為78%&emsp;乙醯乙酸所占第二約為28%&emsp;丙酮最低約為4%<br><br>
+            <img src="../img/a.png" width="210px" height="350px">&emsp;<img src="../img/b.png" width="210px"
+                height="350px">&emsp;<img src="../img/c.png" width="210px" height="350px">
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top: 840px;" id="bb">二.化學反應式</ul><br>
+        <li style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 940px;">
+            酮體中的乙醯乙酸會與尿液試紙中的亞硝基鐵氰化鈉反應，產生紫紅色的複合物。
+            <br>此反應是不與β-羥丁酸所反應。<br><br>
+            <img src="../img/d.png" width="1000px" height="500px"><br>&emsp;
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:1530px;" id="cc">三.生理意義與正常值範圍</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 1630px;">
+            生理意義:<br>
+            因為我們腦中血腦脹壁的緣故，腦組織要獲得能量只能透過葡萄糖和酮體，那如果這時遇到葡萄糖缺乏時，例如說長時間的禁食，也就是斷食，那這時酮體就能發揮作用，他能讓葡萄糖節省利用，和蛋白質減少水解。<br><br>
+            另外酮體還有另外兩個功用:<br>
+            1. 血糖水平受損時，大腦無法利用脂肪酸，酮體成為能量來源。<br>
+            2. 長時間飢餓，酮體占大腦能量近2/3。<br><br>
+            正常值範圍:<br>
+            正常的酮體參考值範圍0.5-3.0 mg/dl，當你血中酮體的含量大於0.5mM<br>
+            和長時間的血糖不穩及低胰島素含量，我們可稱為酮症。<br>
+            <br><br>
+            &emsp;
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:1990px;" id="dd">四.臨床病理意義及異常原因</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 2090px;">
+
+            1.生理性酮症(0.5~3mM)<br>
+            生理性酮症是對低葡萄糖可用性的正常反應，例如說在低碳水化合物飲食或是禁食的時候，以酮的形式為大腦提供而外來源。
+            生理性酮症之所以叫生理性酮症，是因為血液中的酮體提升至基線水平以上，但患者的ph值仍得以維持。<br><br>
+
+            發生情況:<br>
+            1.新生兒期間、懷孕期間。<br>
+            2.生酮飲食、長時間運動。<br><br>
+
+            異常原因:<br>
+            1.葡萄糖減少攝取、脂質增加攝取。<br>
+            2.先天性代謝缺陷。<br><br>
+
+            病徵:<br>
+            1.血清酮升高，血糖和血液 pH 值正常。<br>
+            2.發熱、嘔吐、腹瀉。<br><br><br>
+
+
+            2.糖尿病酮症酸中毒(>25mM)<br>
+            糖尿病酮症酸中毒是一種病理狀態，酮體不受控制的產生，血糖會升高。<br><br>
+
+            發生情況:<br>
+            1 型糖尿病、晚期 2 型糖尿病患者。<br><br>
+
+            原因:<br>
+            胰島素缺乏，患者無法調控血糖濃度，需要仰賴酮體做為能源，導致酮體嚴重偏高，因為酮體的偏酸性，患者無法有效調控血液中PH值，導致血中酸中毒。<br><br>
+
+            病徵:<br>
+            嘔吐、腹痛、排尿增加、神智不清、昏迷、甚至死亡。<br>
+
+            <br><br>
+            &emsp;
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:3010px;" id="ee">五.異常時之醫療處置方</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 3120px;">
+            當胰島素缺乏時<br>
+            • 葡萄糖（血糖）不能進入細胞用作燃料來源。<br>• 肝臟會產生大量的血糖。<br>• 脂肪分解太快，身體無法處理。<br><br>
+
+            解決辦法:<br>
+            • 靜脈輸液<br>
+            • 注射胰島素<br>
+            <br><br>
+            &emsp;
+        </li>
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:3360px;" id="ff">六.試紙檢驗量化各顏色定義</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 3470px;">
+            尿酮檢測:測驗尿液中的乙醯乙酸，測試結果顏色判定如下<br>
+            <img src="../img/f.jpg" style="width: 900px;"><br>
+            對應色碼:<br>
+            陰性:RGB (247,189,151)、Hex: #F7BD97、HSV (23.8,0.3887,0.9686)<br>
+            陽性(微量0.5±):RGB (233,154,124)、Hex: #E99A7C、HSV (16.9,0.4721,0.9137)<br>
+            陽性(輕量1.5±):RGB (235,121,134)、Hex: #EB7986、HSV (353.2,0.4851,0.9216)<br>
+            陽性(低量4.0±):RGB (191,76,105)、Hex: #BF4C69、HSV (344.9,0.6021,0.7490)<br>
+            陽性(中量8.0±):RGB (145,38,92)、Hex: #91265C、HSV (329.7,0.7379,0.5686)<br>
+            陽性(高量16.0±):RGB (110,41,79)、Hex: #6E1F4F、HSV (323.5,0.7182,0.4314)<br><br>
+            上面色塊的部分，左邊較偏膚色是較正常的檢驗結國，越往右邊越偏紫色，表示體內中的酮體代謝非常高，也可以解釋身體是呈現脂肪功能狀態。
+
+        </li>
+
+        <ul style="font-size: 34px; position: absolute; left: 26%; top:4190px;" id="gg">七.酮體的測量方式與比較</ul><br>
+        <li
+            style="width: 1000px; list-style-type: none; font-size: 24px; position: absolute; left: 28.6%; top: 4300px;">
+            測量方式<br>
+            <img src="../img/e.jpg" style="width: 900px;"><br>
+            氣酮:<br>
+            身體中的脂肪酸轉化為酮體，約有2~3%的酮體轉化為丙酮，再由嘴巴呼出去。<br><br>
+
+            優點:<br>
+            • 可多次使用。<br>
+            • 選擇有精準感測器的氣酮機，在特定條件下測量。<br><br>
+
+            缺點:<br>
+            • 進食影響準確度的食物(醉雞、咖啡、唇膏、酒精等)。<br>
+            • 無法測量血糖值。<br><br>
+            尿酮:<br><br>
+            優點:<br>
+            • 快速、便宜的檢測方式。<br>
+            缺點:<br>
+            • 不夠精確，使用尿酮檢測未檢測出尿酮結果並不表示身體未處於酮症狀態。<br>
+            • 易受水分多寡影響，水分越多，顏色越淡。<br><br>
+
+            血酮(最準確):<br><br>
+            優點: <br>
+            • 準確了解食物對身體的影響，從而調整飲食，達致目標狀態。<br><br>
+            缺點: <br>
+            • 試紙費用相對昂貴。<br><br>&emsp;
+        </li>
+
+
+    </div>
+    <div class="menu">
+        <div class="has_children">
+            <ul>
+                <li>首頁</li>
+            </ul>
+            <a href="../link/光譜儀_1.html#aa" style="text-decoration: none;">&emsp;&emsp;---前言</a>
+            <a href="../link/光譜儀_1.html#bb" style="text-decoration: none;">&emsp;&emsp;---動機</a>
+            <a href="../link/光譜儀_1.html#cc" style="text-decoration: none;">&emsp;&emsp;---背景與目的</a>
+            <a href="../link/光譜儀_1.html#dd" style="text-decoration: none;">&emsp;&emsp;---參考資料</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>設計專案</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---心智地圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---強弱危機分析</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---魚骨圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---甘特圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---市場分析</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>設計資料</li>
+            </ul>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---性能描述</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---運作功能方塊圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---外觀與內部機械架構圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---電子線路圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---雙層電路板正反面佈線圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---電路板3D模擬圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---機構圖與電路板爆炸組裝圖</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---零件表</a>
+            <a href="#" style="text-decoration: none;">&emsp;&emsp;---光譜儀實體製作</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>會議記錄</li>
+            </ul>
+            <a href="../link/m1.html" style="text-decoration: none;">&emsp;&emsp;---第一次(2021.03.04)</a>
+            <a href="../link/m2.html" style="text-decoration: none;">&emsp;&emsp;---第二次(2021.03.29)</a>
+            <a href="../link/m3.html" style="text-decoration: none;">&emsp;&emsp;---第三次(2021.04.11)</a>
+            <a href="../link/m4.html" style="text-decoration: none;">&emsp;&emsp;---第四次(2021.04.21)</a>
+            <a href="../link/m5.html" style="text-decoration: none;">&emsp;&emsp;---第五次(2021.05.12)</a>
+            <a href="../link/m6.html" style="text-decoration: none;">&emsp;&emsp;---第六次(2021.05.26)</a>
+        </div>
+        <div class="has_children">
+            <ul>
+                <li style="font-size: 24px;">App介面分析報告</li>
+            </ul>
+            <a href="../link/app.html" style="text-decoration: none;">&emsp;&emsp;---App介面分析</a>
+
+        </div>
+        <div class="has_children">
+            <ul>
+                <li>尿液試紙報告</li>
+            </ul>
+            <a href="#aa" style="text-decoration: none;">&emsp;&emsp;---分子結構</a>
+            <a href="#bb" style="text-decoration: none;">&emsp;&emsp;---化學反應式</a>
+            <a href="#cc" style="text-decoration: none;">&emsp;&emsp;---生理意義與正常值範圍</a>
+            <a href="#dd" style="text-decoration: none;">&emsp;&emsp;---臨床病理意義及異常原因</a>
+            <a href="#ee" style="text-decoration: none;">&emsp;&emsp;---異常時之醫療處置方</a>
+            <a href="#ff" style="text-decoration: none;">&emsp;&emsp;---試紙檢驗量化各顏色定義</a>
+            <a href="#gg" style="text-decoration: none;">&emsp;&emsp;---其他檢測方法與比較</a>
+        </div>
+    </div>
+</body>
+
+</html>
